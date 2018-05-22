@@ -1,0 +1,161 @@
+﻿@model thippeswamy.Models.ShelfContext
+@{
+    ViewBag.Title = "Index";
+}
+
+<!--<h1>welcome to product shelf exercise </h1>-->
+<div class="col-sm-12">
+    <form method="post" class="outerTable form-inline ">
+        <div class="createshelfblock col-sm-6">
+
+
+
+            <input type="text" class="input-sm form-control row_box" name="row_box" placeholder="enter rows" />
+
+
+            <input type="text" class="input-sm form-control column_box" name="column_box" placeholder="enter columns" />
+
+
+            <input type="submit" id="createshelf_btn" class="btn btn-primary" value="create shelf" />
+            <p class="shelfCreatedSuccessMsg">@Model.shelfCreatedSuccessMsg</p>
+        </div>
+
+
+
+        <div class="getShelfBlock col-sm-6">
+            <div class=" form-group">
+
+                <label>select rack Id </label>
+
+                <select class="rackid dropdown dropdown-toggle" name="rackid">
+                    <option value="rack Id">rack Id</option>
+                    @foreach (int item in ViewBag.rackids)
+                    {
+                        <option value="@item">@item</option>
+                    }
+
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>select Shelf Id</label>
+
+                <select class="shelfid dropdown dropdown-toggle" name="shelfid">
+                    <option value="shelf Id">shelf Id</option>
+                    @foreach (int item in ViewBag.shelfids)
+                    {
+                        <option value="@item">@item</option>
+                    }
+
+                </select>
+            </div>
+            <input class="getshelf_btn btn btn-primary" type="submit" value="Get Shelf" />
+
+        </div>
+
+        <table class="sensorsDisplay table table-bordered table-hover table-striped"></table>
+
+        <div id="dialog" hidden>
+            <p>select product</p>
+            <select class="product dropdown dropdown-toggle" name="productName">
+                <option value="select product">select product</option>
+                <option value="coke">coke</option>
+                <option value="pepsi">pepsi</option>
+            </select>
+            <input type="submit" id="submitProduct" onclick="submitProduct()" value="submitProduct" />
+            <input type="button" id="cancel" value="cancel" />
+            <p class="alertMessage"></p>
+        </div>
+
+
+    </form>
+
+
+</div>
+
+
+<script>
+        $(document).ready(function () {
+
+
+            $("#dialog").dialog({ autoOpen: false });
+
+
+
+
+
+
+            $("#cancel").on("click", function () {
+                $("#dialog").dialog("close");
+            });
+            DisplayTable();
+
+        });
+
+
+
+        function DisplayTable()
+        {
+            var jsonObject=@Html.Raw(Json.Encode(Model));
+            if (jsonObject.rowCount > 0 && jsonObject.columnCount > 0)
+            {
+                $(".sensorsDisplay").empty();
+                var sensorcount = 0;
+                var stringHtml;
+                var stringRows;
+                var sensors = jsonObject.sensors;
+                var ProductNames = jsonObject.productNames;
+                for (var i = 0; i < jsonObject.rowCount; i++)
+                {
+
+                    stringHtml = "";
+                     for (var j = 0; j < jsonObject.columnCount; j++)
+                     {
+
+                         stringHtml += "<td class='sensorCell' onclick='showDialog(" + sensors[sensorcount] + ")'><span class='sensorid'><a>" + sensors[sensorcount] + "</a></span><span class='productname'>" + ProductNames[sensorcount]+"</span></td>";
+
+                         sensorcount++;
+                     }
+                     stringRows += "<tr>" + stringHtml + "</tr>";
+
+                }
+            $(".sensorsDisplay").append(stringRows);
+            }
+
+
+        }
+
+            $(".getshelf_btn").click(function () {
+
+
+        });
+            var currentCellRef = {};
+            function showDialog(id) {
+
+
+            alert(id);
+                $("#dialog")
+                    .data('sensorid', id)
+                    .dialog("open");
+            }
+
+
+            function submitProduct() {
+                var sensorid = $("#dialog").data('sensorid');
+                var productName = $(".product").val();
+                $.post("Home/RegisterProduct", { "sensorId": sensorid, "productName": productName });
+
+                if (productName !="select product") {
+
+                    var sensorProductMapped = "<span class='sensorid'><a>" + sensorid + "</a></span>" + "<span class='productname'>" + productName+"</span>";
+
+                    $("#dialog").dialog("close");
+                }
+                else {
+                     $(".alertMessage").text("select any product!!!");
+
+                }
+
+
+            }
+</script>

@@ -1,0 +1,51 @@
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\NEC\thippeswamy\thippeswamy\bin\thippeswamy.dll.config
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\NEC\thippeswamy\thippeswamy\bin\thippeswamy.dll
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\NEC\thippeswamy\thippeswamy\bin\thippeswamy.pdb
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\NEC\thippeswamy\thippeswamy\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\NEC\thippeswamy\thippeswamy\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\NEC\thippeswamy\thippeswamy\bin\System.Web.Helpers.dll
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\NEC\thippeswamy\thippeswamy\bin\System.Web.Mvc.dll
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\NEC\thippeswamy\thippeswamy\bin\System.Web.Razor.dll
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\NEC\thippeswamy\thippeswamy\bin\System.Web.Webpages.Deployment.dll
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\NEC\thippeswamy\thippeswamy\bin\System.Web.Webpages.dll
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\NEC\thippeswamy\thippeswamy\bin\System.Web.Webpages.Razor.dll
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\NEC\thippeswamy\thippeswamy\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\NEC\thippeswamy\thippeswamy\bin\System.Web.Razor.xml
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\NEC\thippeswamy\thippeswamy\bin\System.Web.Webpages.xml
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\NEC\thippeswamy\thippeswamy\bin\System.Web.Webpages.Deployment.xml
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\NEC\thippeswamy\thippeswamy\bin\System.Web.Webpages.Razor.xml
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\NEC\thippeswamy\thippeswamy\bin\System.Web.Helpers.xml
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\NEC\thippeswamy\thippeswamy\bin\System.Web.Mvc.xml
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\NEC\thippeswamy\thippeswamy\obj\Debug\thippeswamy.csprojResolveAssemblyReference.cache
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\NEC\thippeswamy\thippeswamy\obj\Debug\thippeswamy.csproj.CoreCompileInputs.cache
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\NEC\thippeswamy\thippeswamy\obj\Debug\thippeswamy.dll
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\NEC\thippeswamy\thippeswamy\obj\Debug\thippeswamy.pdb
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\nec new\thippeswamy\thippeswamy\bin\thippeswamy.dll.config
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\nec new\thippeswamy\thippeswamy\bin\thippeswamy.dll
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\nec new\thippeswamy\thippeswamy\bin\thippeswamy.pdb
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\nec new\thippeswamy\thippeswamy\bin\Google.Protobuf.dll
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\nec new\thippeswamy\thippeswamy\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\nec new\thippeswamy\thippeswamy\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\nec new\thippeswamy\thippeswamy\bin\MySql.Data.dll
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\nec new\thippeswamy\thippeswamy\bin\System.Web.Helpers.dll
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\nec new\thippeswamy\thippeswamy\bin\System.Web.Mvc.dll
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\nec new\thippeswamy\thippeswamy\bin\System.Web.Razor.dll
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\nec new\thippeswamy\thippeswamy\bin\System.Web.Webpages.Deployment.dll
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\nec new\thippeswamy\thippeswamy\bin\System.Web.Webpages.dll
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\nec new\thippeswamy\thippeswamy\bin\System.Web.Webpages.Razor.dll
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\nec new\thippeswamy\thippeswamy\bin\Google.Protobuf.xml
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\nec new\thippeswamy\thippeswamy\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\nec new\thippeswamy\thippeswamy\bin\MySql.Data.xml
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\nec new\thippeswamy\thippeswamy\bin\System.Web.Razor.xml
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\nec new\thippeswamy\thippeswamy\bin\System.Web.Webpages.xml
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\nec new\thippeswamy\thippeswamy\bin\System.Web.Webpages.Deployment.xml
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\nec new\thippeswamy\thippeswamy\bin\System.Web.Webpages.Razor.xml
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\nec new\thippeswamy\thippeswamy\bin\System.Web.Helpers.xml
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\nec new\thippeswamy\thippeswamy\bin\System.Web.Mvc.xml
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\nec new\thippeswamy\thippeswamy\obj\Debug\thippeswamy.csproj.CoreCompileInputs.cache
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\nec new\thippeswamy\thippeswamy\obj\Debug\thippeswamy.dll
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\nec new\thippeswamy\thippeswamy\obj\Debug\thippeswamy.pdb
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\nec new\thippeswamy\thippeswamy\bin\DataAccess.pdb
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\nec new\thippeswamy\thippeswamy\obj\Debug\thippeswamy.csprojResolveAssemblyReference.cache
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\nec new\thippeswamy\thippeswamy\bin\DataAccess.dll
+C:\Users\thippeswamy.a.CSGSOL\Documents\thippeswamy\nec new\thippeswamy\thippeswamy\bin\DataAccess.dll.config
