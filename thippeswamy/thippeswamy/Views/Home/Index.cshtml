@@ -67,9 +67,7 @@
             <p class="alertMessage"></p>
         </div>
 
-
     </form>
-
 
 </div>
 
@@ -79,21 +77,14 @@
 
 
             $("#dialog").dialog({ autoOpen: false });
-
-
-
-
-
-
+            
             $("#cancel").on("click", function () {
                 $("#dialog").dialog("close");
             });
             DisplayTable();
 
         });
-
-
-
+    
         function DisplayTable()
         {
             var jsonObject=@Html.Raw(Json.Encode(Model));
