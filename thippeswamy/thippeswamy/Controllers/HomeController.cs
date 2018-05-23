@@ -9,32 +9,34 @@ namespace thippeswamy.Controllers
 {
     public class HomeController : Controller
     {
+        List<int> rackIds = new List<int>();
+        List<int> shelfIds = new List<int>();
+        DbAccess db = new DbAccess();
         // GET: Home
         [HttpGet]
         public ActionResult Index()
         {
-            List<int> rackIds = new List<int>();
-            List<int> shelfIds = new List<int>();
-            DbAccess db = new DbAccess();
+           
+         
+            ShelfContext context = new ShelfContext();
             db.GetRackShelfDetails(out rackIds, out shelfIds);
-            ViewBag.rackids = rackIds;
-            ViewBag.shelfids = shelfIds;
+            context.shelfIds = shelfIds;
+            context.rackIds = rackIds;
+          
             
-            return View(new ShelfContext());
+            return View(context);
         }
 
         [HttpPost]
         public ActionResult Index(FormCollection formCollection)
         {
-            DbAccess db = new DbAccess();
+         
             ShelfContext context = new ShelfContext();
-
-            List<int> rackIds = new List<int>();
-            List<int> shelfIds = new List<int>();
-
+            
             db.GetRackShelfDetails(out rackIds, out shelfIds);
-            ViewBag.rackids = rackIds;
-            ViewBag.shelfids = shelfIds;
+            context.shelfIds = shelfIds;
+            context.rackIds = rackIds;
+          
             short rowCount = 0;
             short columnCount = 0;
           
@@ -43,9 +45,12 @@ namespace thippeswamy.Controllers
                 if(rowCount > 0 && columnCount > 0)
                 { 
 
-                db.AddShelf(rowCount, columnCount);
-                context.shelfCreatedSuccessMsg = "shelf created successfully!!";
-                return View(context);
+                    db.AddShelf(rowCount, columnCount);
+                    db.GetRackShelfDetails(out rackIds, out shelfIds);
+                    context.shelfIds = shelfIds;
+                    context.rackIds = rackIds;
+                    context.shelfCreatedSuccessMsg = "shelf created successfully!!";
+                    return View(context);
                 }
             }
            
@@ -81,13 +86,13 @@ namespace thippeswamy.Controllers
 
         public ActionResult RegisterProduct()
         {
-            DbAccess db = new DbAccess();
+          
             int sensorId =Convert.ToInt32( Request.Params["sensorId"]);
             string productName = Request.Params["productName"];
 
             db.ProductSensorMapping(productName,sensorId);
             return RedirectToAction("Index");
-            return View();
+           // return View();
 
         }
     }

@@ -29,7 +29,7 @@
 
                 <select class="rackid dropdown dropdown-toggle" name="rackid">
                     <option value="rack Id">rack Id</option>
-                    @foreach (int item in ViewBag.rackids)
+                    @foreach (int item in @Model.rackIds)
                     {
                         <option value="@item">@item</option>
                     }
@@ -42,7 +42,7 @@
 
                 <select class="shelfid dropdown dropdown-toggle" name="shelfid">
                     <option value="shelf Id">shelf Id</option>
-                    @foreach (int item in ViewBag.shelfids)
+                    @foreach (int item in @Model.shelfIds)
                     {
                         <option value="@item">@item</option>
                     }
@@ -70,8 +70,11 @@
     </form>
 
 </div>
-
-
+<!--
+<div class="editor-field">
+    @Html.DropDownList("gender",new List<SelectListItem> { new SelectListItem { Text = "male", Value = "male" }, new SelectListItem { Text = "female", Value = "female" } }, "select gender" )
+</div>
+-->
 <script>
         $(document).ready(function () {
 

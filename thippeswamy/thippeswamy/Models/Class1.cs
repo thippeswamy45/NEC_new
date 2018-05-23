@@ -8,6 +8,8 @@ namespace thippeswamy.Models
 {
     public class ShelfContext
     {
+        public List<int> shelfIds { get; set; }
+        public List<int> rackIds { get; set; }
         public List<int> sensors { get; set; }
         public List<string> productNames { get; set; }
         public int rowCount { get; set; }
