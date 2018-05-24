@@ -9,7 +9,7 @@ namespace DataAccess
 {
     public class DbAccess
     {
-         public  string CS = "datasource=localhost;port=3306;database=test1; username=root; password=Mind@123;SslMode=none";
+        public string CS = "datasource=localhost;port=3306;database=test1; username=root; password=Mind@123;SslMode=none";
 
         // creating the shelf and sensors,mappings
 
@@ -224,7 +224,7 @@ namespace DataAccess
 
                     while (RackIdList.Read())
                     {
-                
+
                         rackIds.Add(Convert.ToInt16(RackIdList["rackid"]));
 
                     }
@@ -247,7 +247,7 @@ namespace DataAccess
 
                     while (ShelfIdList.Read())
                     {
-                        
+
                         shelfIds.Add(Convert.ToInt16(ShelfIdList["shelfid"]));
 
                     }
@@ -259,8 +259,8 @@ namespace DataAccess
                 }
                 ShelfIdList.Close();
             }
-           
-          
+
+
             _rackids = rackIds;
             _shelfids = shelfIds;
 
@@ -280,31 +280,31 @@ namespace DataAccess
             DbAccess db = new DbAccess();
             int row = 0;
             int col = 0;
-         //   db.AddShelf(3, 3);
-         //   db.GetShelfDetails(1, out sensorIds, out productNames, out row, out col);
-         //   db.ProductSensorMapping("pepsi",2);
+            //   db.AddShelf(3, 3);
+            //   db.GetShelfDetails(1, out sensorIds, out productNames, out row, out col);
+            //   db.ProductSensorMapping("pepsi",2);
 
             db.GetRackShelfDetails(out rackIds, out shelfIds);
 
-              foreach (var item in rackIds)
-              {
-                  Console.Write(item);
-              }
-              Console.WriteLine("\n");
-              foreach (var item in shelfIds)
-              {
-                  Console.Write(item);
-              }
-
-           /* foreach (var item in sensorIds)
+            foreach (var item in rackIds)
             {
-                Console.WriteLine(item);
+                Console.Write(item);
+            }
+            Console.WriteLine("\n");
+            foreach (var item in shelfIds)
+            {
+                Console.Write(item);
             }
 
-            foreach (var item in productNames)
-            {
-                Console.WriteLine(item);
-            }*/
+            /* foreach (var item in sensorIds)
+             {
+                 Console.WriteLine(item);
+             }
+
+             foreach (var item in productNames)
+             {
+                 Console.WriteLine(item);
+             }*/
             Console.Read();
         }
     }

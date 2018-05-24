@@ -16,34 +16,31 @@ namespace thippeswamy.Controllers
         [HttpGet]
         public ActionResult Index()
         {
-           
-         
             ShelfContext context = new ShelfContext();
             db.GetRackShelfDetails(out rackIds, out shelfIds);
             context.shelfIds = shelfIds;
             context.rackIds = rackIds;
-          
-            
+
             return View(context);
         }
 
         [HttpPost]
         public ActionResult Index(FormCollection formCollection)
         {
-         
+
             ShelfContext context = new ShelfContext();
-            
+
             db.GetRackShelfDetails(out rackIds, out shelfIds);
             context.shelfIds = shelfIds;
             context.rackIds = rackIds;
-          
+
             short rowCount = 0;
             short columnCount = 0;
-          
+
             if (Int16.TryParse(formCollection["row_box"], out rowCount) && Int16.TryParse(formCollection["column_box"], out columnCount))
             {
-                if(rowCount > 0 && columnCount > 0)
-                { 
+                if (rowCount > 0 && columnCount > 0)
+                {
 
                     db.AddShelf(rowCount, columnCount);
                     db.GetRackShelfDetails(out rackIds, out shelfIds);
@@ -53,16 +50,16 @@ namespace thippeswamy.Controllers
                     return View(context);
                 }
             }
-           
+
 
             if (formCollection["rackid"] != "rack Id" && formCollection["shelfid"] != "shelf Id")
             {
-                int shelfid = Convert.ToInt16( formCollection["shelfid"]);
+                int shelfid = Convert.ToInt16(formCollection["shelfid"]);
                 List<int> sensors = new List<int>();
                 List<string> productNames = new List<string>();
-               // short rowCount;
-              //  short columnCount;
-                db.GetShelfDetails(shelfid,out sensors,out productNames,out rowCount,out columnCount );
+                // short rowCount;
+                //  short columnCount;
+                db.GetShelfDetails(shelfid, out sensors, out productNames, out rowCount, out columnCount);
                 context.sensors = sensors;
                 context.productNames = productNames;
                 context.rowCount = rowCount;
@@ -81,18 +78,18 @@ namespace thippeswamy.Controllers
                 return View(context);
             }
 
-          
+
         }
 
         public ActionResult RegisterProduct()
         {
-          
-            int sensorId =Convert.ToInt32( Request.Params["sensorId"]);
+
+            int sensorId = Convert.ToInt32(Request.Params["sensorId"]);
             string productName = Request.Params["productName"];
 
-            db.ProductSensorMapping(productName,sensorId);
+            db.ProductSensorMapping(productName, sensorId);
             return RedirectToAction("Index");
-           // return View();
+            // return View();
 
         }
     }
