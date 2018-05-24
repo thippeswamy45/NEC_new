@@ -296,15 +296,15 @@ namespace DataAccess
                 Console.Write(item);
             }
 
-            /* foreach (var item in sensorIds)
-             {
-                 Console.WriteLine(item);
-             }
+                                /* foreach (var item in sensorIds)
+                                 {
+                                     Console.WriteLine(item);
+                                 }
 
-             foreach (var item in productNames)
-             {
-                 Console.WriteLine(item);
-             }*/
+                                 foreach (var item in productNames)
+                                 {
+                                     Console.WriteLine(item);
+                                 }*/
             Console.Read();
         }
     }
